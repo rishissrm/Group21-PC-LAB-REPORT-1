@@ -2,17 +2,20 @@
 <stdio.h> 
 #defineMAX 100
  struct cg { // structure to hold x and y coordinates and mass 
-float x, y, mass; 
+    float x, y, mass; 
 }masses[MAX]; 
 int readin(void) 
 {
-/* Write this function to read in the data 
-into the array masses  
-note that this function should return the number of  
-2 
-of 
-Page 
-4 
+// function to read in the data 
+void readi(int n)
+{  
+    int i;
+    for(i = 0; i<n; i=++)
+{ 
+    //read x,y and mass for each weight
+    scanf("%f %f %f", &masses[i].x, &masses[i].y, &masses[i].mass);
+}
+}
 masses read in from the file */ 
 } 
 void computecg(int n_masses) 
