@@ -30,14 +30,13 @@ sum_of_xmass = sum_of_xmass + (masses[i].x * masses[i].mass);
 sum_of_ymass = sum_of_ymass + (masses[i].y * masses[i].mass);
 sum_of_mass = sum_of_mass + masses[i].mass;
 }
+// calculate the centre of gravity
+float cg_x = sum_of_xmass / sum_of_mass;
+float cg_y = sum_of_ymass / sum_of_mass;
 
-masses read in from the file */ 
-} 
-void computecg(int n_masses) 
-{ 
-/* Write this function to compute the C of G  
-and print the result 
-)
+// print the result
+printf("CoG coordinates are: x = %.2f y = %.2f\n", cg_x, cg_y);
+}
 int main(void)
 { 
 int number; 
