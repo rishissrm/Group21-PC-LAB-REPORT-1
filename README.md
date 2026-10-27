@@ -23,6 +23,14 @@ float sum_of_xmass = 0;
 float sum_of_ymass = 0;
 float sum_of_mass = 0;
 int i;
+// loop through all the masses and add everything up
+for(i = 0; i < n; i++)
+{
+sum_of_xmass = sum_of_xmass + (masses[i].x * masses[i].mass);
+sum_of_ymass = sum_of_ymass + (masses[i].y * masses[i].mass);
+sum_of_mass = sum_of_mass + masses[i].mass;
+}
+
 masses read in from the file */ 
 } 
 void computecg(int n_masses) 
